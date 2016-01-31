@@ -1,0 +1,17 @@
+PODS:
+  - Alamofire (3.1.5)
+  - AlamofireImage (2.3.0):
+    - Alamofire (~> 3.1)
+  - Fuzi (0.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1)
+  - AlamofireImage (~> 2.3)
+  - Fuzi (~> 0.3)
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  AlamofireImage: 4013fb5b99b10117bf2554a67b9bd2231d476b45
+  Fuzi: 4725b8743f0a92100108e013347bf32ca80d93a1
+
+COCOAPODS: 0.39.0
