@@ -39,10 +39,7 @@ class ViewController: NSViewController {
       (image) in
         self.currentImage.image = image
     })
-
   }
-  
-  
   
   
   @IBAction func refresh(sender: AnyObject) {

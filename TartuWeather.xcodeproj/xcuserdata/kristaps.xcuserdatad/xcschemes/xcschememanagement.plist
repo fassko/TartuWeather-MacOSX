@@ -9,7 +9,7 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>TodayTartuWeather.xcscheme_^#shared#^_</key>
+		<key>meteoTartuWidget.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -17,6 +17,31 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6346AF281C5E65D400694EA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6346AF411C5E68D600694EA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6346AF591C5E6BB800694EA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6346AF711C5E6BC400694EA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6346AF8F1C5EA5FE00694EA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>63E016A31C595A89002D1C22</key>
 		<dict>
 			<key>primary</key>

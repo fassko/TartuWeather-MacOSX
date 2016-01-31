@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6346AF731C5E6BC400694EA7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E016BC1C595AB2002D1C22 /* NotificationCenter.framework */; };
+		6346AF781C5E6BC500694EA7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346AF771C5E6BC500694EA7 /* TodayViewController.swift */; };
+		6346AF7B1C5E6BC500694EA7 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6346AF791C5E6BC500694EA7 /* TodayViewController.xib */; };
+		6346AF7F1C5E6BC500694EA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6346AF7D1C5E6BC500694EA7 /* InfoPlist.strings */; };
+		6346AF821C5E6BC500694EA7 /* meteoTartuWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6346AF721C5E6BC400694EA7 /* meteoTartuWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6346AF891C5EA32100694EA7 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AFB8081C5E5294004A58E1 /* WeatherAPI.swift */; };
+		6346AF8B1C5EA33C00694EA7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6346AF8A1C5EA33C00694EA7 /* Pods.framework */; };
 		63AFB8091C5E5294004A58E1 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AFB8081C5E5294004A58E1 /* WeatherAPI.swift */; };
-		63AFB80C1C5E5E41004A58E1 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AFB8081C5E5294004A58E1 /* WeatherAPI.swift */; };
 		63E016A81C595A89002D1C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E016A71C595A89002D1C22 /* AppDelegate.swift */; };
 		63E016AA1C595A89002D1C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E016A91C595A89002D1C22 /* ViewController.swift */; };
 		63E016AC1C595A89002D1C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E016AB1C595A89002D1C22 /* Assets.xcassets */; };
 		63E016AF1C595A89002D1C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E016AD1C595A89002D1C22 /* Main.storyboard */; };
-		63E016BD1C595AB2002D1C22 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E016BC1C595AB2002D1C22 /* NotificationCenter.framework */; };
-		63E016C21C595AB2002D1C22 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E016C11C595AB2002D1C22 /* TodayViewController.swift */; };
-		63E016C51C595AB2002D1C22 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E016C31C595AB2002D1C22 /* TodayViewController.xib */; };
-		63E016C91C595AB2002D1C22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E016C71C595AB2002D1C22 /* InfoPlist.strings */; };
-		63E016CC1C595AB2002D1C22 /* TodayTartuWeather.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63E016BA1C595AB2002D1C22 /* TodayTartuWeather.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8C03FBC83870017E1BC19610 /* Pods_TartuWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA886C1A6FA2147130FD3A06 /* Pods_TartuWeather.framework */; };
-		DB9EC292B9D04338428DEFDC /* Pods_TodayTartuWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA9E04646665A1704985184 /* Pods_TodayTartuWeather.framework */; };
+		F62BEAE1DED294D7A8174C12 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250FD7F8C1EA6447E71E4BD5 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		63E016CA1C595AB2002D1C22 /* PBXContainerItemProxy */ = {
+		6346AF801C5E6BC500694EA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63E0169C1C595A89002D1C22 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 63E016B91C595AB2002D1C22;
-			remoteInfo = TodayTartuWeather;
+			remoteGlobalIDString = 6346AF711C5E6BC400694EA7;
+			remoteInfo = meteoTartuWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				63E016CC1C595AB2002D1C22 /* TodayTartuWeather.appex in Embed App Extensions */,
+				6346AF821C5E6BC500694EA7 /* meteoTartuWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,69 +47,75 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		09EADA2CD0BDD206B40429F3 /* Pods-TodayTartuWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayTartuWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayTartuWeather/Pods-TodayTartuWeather.release.xcconfig"; sourceTree = "<group>"; };
-		5C359C0C73008CD700CC98EF /* Pods-TodayTartuWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayTartuWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayTartuWeather/Pods-TodayTartuWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		0E1E838DE9BAB69E74F36125 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		250FD7F8C1EA6447E71E4BD5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6346AF721C5E6BC400694EA7 /* meteoTartuWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = meteoTartuWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6346AF761C5E6BC400694EA7 /* meteoTartuWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = meteoTartuWidget.entitlements; sourceTree = "<group>"; };
+		6346AF771C5E6BC500694EA7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6346AF7A1C5E6BC500694EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		6346AF7C1C5E6BC500694EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6346AF7E1C5E6BC500694EA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6346AF8A1C5EA33C00694EA7 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = Pods/../build/Debug/Pods.framework; sourceTree = "<group>"; };
 		63AFB8081C5E5294004A58E1 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
-		63AFB80A1C5E53B7004A58E1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		63E016A41C595A89002D1C22 /* TartuWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TartuWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E016A71C595A89002D1C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E016A91C595A89002D1C22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63E016AB1C595A89002D1C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E016AE1C595A89002D1C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63E016B01C595A89002D1C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E016BA1C595AB2002D1C22 /* TodayTartuWeather.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayTartuWeather.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E016BC1C595AB2002D1C22 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		63E016C01C595AB2002D1C22 /* TodayTartuWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayTartuWeather.entitlements; sourceTree = "<group>"; };
-		63E016C11C595AB2002D1C22 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		63E016C41C595AB2002D1C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
-		63E016C61C595AB2002D1C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E016C81C595AB2002D1C22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8CA9E04646665A1704985184 /* Pods_TodayTartuWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayTartuWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA886C1A6FA2147130FD3A06 /* Pods_TartuWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TartuWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAFD17A7D253085ECC164767 /* Pods-TartuWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TartuWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-TartuWeather/Pods-TartuWeather.release.xcconfig"; sourceTree = "<group>"; };
-		EC7F5FD29C47ECD4495EC2ED /* Pods-TartuWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TartuWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TartuWeather/Pods-TartuWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		DD572D6068173FE507F45E4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6346AF6F1C5E6BC400694EA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6346AF8B1C5EA33C00694EA7 /* Pods.framework in Frameworks */,
+				6346AF731C5E6BC400694EA7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63E016A11C595A89002D1C22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C03FBC83870017E1BC19610 /* Pods_TartuWeather.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63E016B71C595AB2002D1C22 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63E016BD1C595AB2002D1C22 /* NotificationCenter.framework in Frameworks */,
-				DB9EC292B9D04338428DEFDC /* Pods_TodayTartuWeather.framework in Frameworks */,
+				F62BEAE1DED294D7A8174C12 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F759EC47C4CF65A5DB53F0A /* Pods */ = {
+		6346AF741C5E6BC400694EA7 /* meteoTartuWidget */ = {
 			isa = PBXGroup;
 			children = (
-				EC7F5FD29C47ECD4495EC2ED /* Pods-TartuWeather.debug.xcconfig */,
-				AAFD17A7D253085ECC164767 /* Pods-TartuWeather.release.xcconfig */,
-				5C359C0C73008CD700CC98EF /* Pods-TodayTartuWeather.debug.xcconfig */,
-				09EADA2CD0BDD206B40429F3 /* Pods-TodayTartuWeather.release.xcconfig */,
+				6346AF771C5E6BC500694EA7 /* TodayViewController.swift */,
+				6346AF791C5E6BC500694EA7 /* TodayViewController.xib */,
+				6346AF7C1C5E6BC500694EA7 /* Info.plist */,
+				6346AF7D1C5E6BC500694EA7 /* InfoPlist.strings */,
+				6346AF751C5E6BC400694EA7 /* Supporting Files */,
 			);
-			name = Pods;
+			path = meteoTartuWidget;
+			sourceTree = "<group>";
+		};
+		6346AF751C5E6BC400694EA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6346AF761C5E6BC400694EA7 /* meteoTartuWidget.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		63E0169B1C595A89002D1C22 = {
 			isa = PBXGroup;
 			children = (
 				63E016A61C595A89002D1C22 /* TartuWeather */,
-				63E016BE1C595AB2002D1C22 /* TodayTartuWeather */,
+				6346AF741C5E6BC400694EA7 /* meteoTartuWidget */,
 				63E016BB1C595AB2002D1C22 /* Frameworks */,
 				63E016A51C595A89002D1C22 /* Products */,
-				5F759EC47C4CF65A5DB53F0A /* Pods */,
+				7BCA05CF785DDF28BF95A258 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				63E016A41C595A89002D1C22 /* TartuWeather.app */,
-				63E016BA1C595AB2002D1C22 /* TodayTartuWeather.appex */,
+				6346AF721C5E6BC400694EA7 /* meteoTartuWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,78 +144,61 @@
 		63E016BB1C595AB2002D1C22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				63AFB80A1C5E53B7004A58E1 /* Quartz.framework */,
+				6346AF8A1C5EA33C00694EA7 /* Pods.framework */,
 				63E016BC1C595AB2002D1C22 /* NotificationCenter.framework */,
-				AA886C1A6FA2147130FD3A06 /* Pods_TartuWeather.framework */,
-				8CA9E04646665A1704985184 /* Pods_TodayTartuWeather.framework */,
+				250FD7F8C1EA6447E71E4BD5 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		63E016BE1C595AB2002D1C22 /* TodayTartuWeather */ = {
+		7BCA05CF785DDF28BF95A258 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				63E016C11C595AB2002D1C22 /* TodayViewController.swift */,
-				63E016C31C595AB2002D1C22 /* TodayViewController.xib */,
-				63E016C61C595AB2002D1C22 /* Info.plist */,
-				63E016C71C595AB2002D1C22 /* InfoPlist.strings */,
-				63E016BF1C595AB2002D1C22 /* Supporting Files */,
+				0E1E838DE9BAB69E74F36125 /* Pods.debug.xcconfig */,
+				DD572D6068173FE507F45E4A /* Pods.release.xcconfig */,
 			);
-			path = TodayTartuWeather;
-			sourceTree = "<group>";
-		};
-		63E016BF1C595AB2002D1C22 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				63E016C01C595AB2002D1C22 /* TodayTartuWeather.entitlements */,
-			);
-			name = "Supporting Files";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63E016A31C595A89002D1C22 /* TartuWeather */ = {
+		6346AF711C5E6BC400694EA7 /* meteoTartuWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63E016B31C595A89002D1C22 /* Build configuration list for PBXNativeTarget "TartuWeather" */;
+			buildConfigurationList = 6346AF831C5E6BC500694EA7 /* Build configuration list for PBXNativeTarget "meteoTartuWidget" */;
 			buildPhases = (
-				F8B9C40D29F509C70AC67FEF /* Check Pods Manifest.lock */,
-				63E016A01C595A89002D1C22 /* Sources */,
-				63E016A11C595A89002D1C22 /* Frameworks */,
-				63E016A21C595A89002D1C22 /* Resources */,
-				63E016D01C595AB2002D1C22 /* Embed App Extensions */,
-				5371CA75AF038D1386ED51BF /* Embed Pods Frameworks */,
-				D40BF775E9BAC91395F03CB8 /* Copy Pods Resources */,
+				6346AF6E1C5E6BC400694EA7 /* Sources */,
+				6346AF6F1C5E6BC400694EA7 /* Frameworks */,
+				6346AF701C5E6BC400694EA7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				63E016CB1C595AB2002D1C22 /* PBXTargetDependency */,
+			);
+			name = meteoTartuWidget;
+			productName = meteoTartuWidget;
+			productReference = 6346AF721C5E6BC400694EA7 /* meteoTartuWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		63E016A31C595A89002D1C22 /* TartuWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E016B31C595A89002D1C22 /* Build configuration list for PBXNativeTarget "TartuWeather" */;
+			buildPhases = (
+				63E016A01C595A89002D1C22 /* Sources */,
+				63E016A11C595A89002D1C22 /* Frameworks */,
+				63E016A21C595A89002D1C22 /* Resources */,
+				63E016D01C595AB2002D1C22 /* Embed App Extensions */,
+				AB9F00301EA23AD3292292E1 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6346AF811C5E6BC500694EA7 /* PBXTargetDependency */,
 			);
 			name = TartuWeather;
 			productName = TartuWeather;
 			productReference = 63E016A41C595A89002D1C22 /* TartuWeather.app */;
 			productType = "com.apple.product-type.application";
-		};
-		63E016B91C595AB2002D1C22 /* TodayTartuWeather */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63E016CD1C595AB2002D1C22 /* Build configuration list for PBXNativeTarget "TodayTartuWeather" */;
-			buildPhases = (
-				781AB11EBD32A1D6CBDA5E56 /* Check Pods Manifest.lock */,
-				63E016B61C595AB2002D1C22 /* Sources */,
-				63E016B71C595AB2002D1C22 /* Frameworks */,
-				63E016B81C595AB2002D1C22 /* Resources */,
-				EB1FE8403C9CBE92D6D18B79 /* Embed Pods Frameworks */,
-				049653B3EB839F6B46B1AE22 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TodayTartuWeather;
-			productName = TodayTartuWeather;
-			productReference = 63E016BA1C595AB2002D1C22 /* TodayTartuWeather.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -221,10 +210,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = fassko;
 				TargetAttributes = {
-					63E016A31C595A89002D1C22 = {
+					6346AF711C5E6BC400694EA7 = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					63E016B91C595AB2002D1C22 = {
+					63E016A31C595A89002D1C22 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -243,12 +232,21 @@
 			projectRoot = "";
 			targets = (
 				63E016A31C595A89002D1C22 /* TartuWeather */,
-				63E016B91C595AB2002D1C22 /* TodayTartuWeather */,
+				6346AF711C5E6BC400694EA7 /* meteoTartuWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6346AF701C5E6BC400694EA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6346AF7B1C5E6BC500694EA7 /* TodayViewController.xib in Resources */,
+				6346AF7F1C5E6BC500694EA7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63E016A21C595A89002D1C22 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,34 +256,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63E016B81C595AB2002D1C22 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63E016C51C595AB2002D1C22 /* TodayViewController.xib in Resources */,
-				63E016C91C595AB2002D1C22 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		049653B3EB839F6B46B1AE22 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayTartuWeather/Pods-TodayTartuWeather-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5371CA75AF038D1386ED51BF /* Embed Pods Frameworks */ = {
+		AB9F00301EA23AD3292292E1 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,72 +271,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TartuWeather/Pods-TartuWeather-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		781AB11EBD32A1D6CBDA5E56 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D40BF775E9BAC91395F03CB8 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TartuWeather/Pods-TartuWeather-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB1FE8403C9CBE92D6D18B79 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayTartuWeather/Pods-TodayTartuWeather-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8B9C40D29F509C70AC67FEF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6346AF6E1C5E6BC400694EA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6346AF891C5EA32100694EA7 /* WeatherAPI.swift in Sources */,
+				6346AF781C5E6BC500694EA7 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63E016A01C595A89002D1C22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,26 +296,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63E016B61C595AB2002D1C22 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63AFB80C1C5E5E41004A58E1 /* WeatherAPI.swift in Sources */,
-				63E016C21C595AB2002D1C22 /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		63E016CB1C595AB2002D1C22 /* PBXTargetDependency */ = {
+		6346AF811C5E6BC500694EA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63E016B91C595AB2002D1C22 /* TodayTartuWeather */;
-			targetProxy = 63E016CA1C595AB2002D1C22 /* PBXContainerItemProxy */;
+			target = 6346AF711C5E6BC400694EA7 /* meteoTartuWidget */;
+			targetProxy = 6346AF801C5E6BC500694EA7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6346AF791C5E6BC500694EA7 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6346AF7A1C5E6BC500694EA7 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		6346AF7D1C5E6BC500694EA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6346AF7E1C5E6BC500694EA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		63E016AD1C595A89002D1C22 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -401,25 +331,47 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		63E016C31C595AB2002D1C22 /* TodayViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63E016C41C595AB2002D1C22 /* Base */,
-			);
-			name = TodayViewController.xib;
-			sourceTree = "<group>";
-		};
-		63E016C71C595AB2002D1C22 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63E016C81C595AB2002D1C22 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6346AF841C5E6BC500694EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = meteoTartuWidget/meteoTartuWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = meteoTartuWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.TartuWeather.meteoTartuWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6346AF851C5E6BC500694EA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = meteoTartuWidget/meteoTartuWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = meteoTartuWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.TartuWeather.meteoTartuWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		63E016B11C595A89002D1C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,6 +392,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -484,6 +437,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -502,7 +456,7 @@
 		};
 		63E016B41C595A89002D1C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC7F5FD29C47ECD4495EC2ED /* Pods-TartuWeather.debug.xcconfig */;
+			baseConfigurationReference = 0E1E838DE9BAB69E74F36125 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -516,7 +470,7 @@
 		};
 		63E016B51C595A89002D1C22 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAFD17A7D253085ECC164767 /* Pods-TartuWeather.release.xcconfig */;
+			baseConfigurationReference = DD572D6068173FE507F45E4A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -528,37 +482,18 @@
 			};
 			name = Release;
 		};
-		63E016CE1C595AB2002D1C22 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C359C0C73008CD700CC98EF /* Pods-TodayTartuWeather.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = TodayTartuWeather/TodayTartuWeather.entitlements;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TodayTartuWeather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.TartuWeather.TodayTartuWeather;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		63E016CF1C595AB2002D1C22 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09EADA2CD0BDD206B40429F3 /* Pods-TodayTartuWeather.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = TodayTartuWeather/TodayTartuWeather.entitlements;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TodayTartuWeather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.TartuWeather.TodayTartuWeather;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6346AF831C5E6BC500694EA7 /* Build configuration list for PBXNativeTarget "meteoTartuWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6346AF841C5E6BC500694EA7 /* Debug */,
+				6346AF851C5E6BC500694EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63E0169F1C595A89002D1C22 /* Build configuration list for PBXProject "TartuWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -573,15 +508,6 @@
 			buildConfigurations = (
 				63E016B41C595A89002D1C22 /* Debug */,
 				63E016B51C595A89002D1C22 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		63E016CD1C595AB2002D1C22 /* Build configuration list for PBXNativeTarget "TodayTartuWeather" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63E016CE1C595AB2002D1C22 /* Debug */,
-				63E016CF1C595AB2002D1C22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

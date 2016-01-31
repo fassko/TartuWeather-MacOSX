@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="meteoTartuWidget" customModuleProvider="target">
+            <connections>
+                <outlet property="measuredTimeLabel" destination="JHm-nP-7bE" id="8LV-jY-t3H"/>
+                <outlet property="temperatureLabel" destination="iSl-fu-XSH" id="Xb1-lT-HVK"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="windLabel" destination="0zp-vc-7GO" id="5zf-LN-bEe"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView autoresizesSubviews="NO" simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-fu-XSH">
+                    <rect key="frame" x="8" y="40" width="100" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="REm-4i-tiY"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="fEi-R3-8up">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0zp-vc-7GO">
+                    <rect key="frame" x="202" y="40" width="100" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="194-x1-0wf"/>
+                        <constraint firstAttribute="height" constant="28" id="JZk-l7-4ST"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="mkg-iU-cQc">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JHm-nP-7bE">
+                    <rect key="frame" x="85" y="20" width="150" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="S37-7Q-AAC"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="cSm-KZ-Z9R">
+                        <font key="font" metaFont="systemThin" size="13"/>
+                        <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="JHm-nP-7bE" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="87" id="E8S-V7-Moe"/>
+                <constraint firstAttribute="trailing" secondItem="JHm-nP-7bE" secondAttribute="trailing" constant="87" id="JvO-fb-KKE"/>
+                <constraint firstAttribute="bottom" secondItem="JHm-nP-7bE" secondAttribute="bottom" constant="20" id="WLF-xi-soW"/>
+                <constraint firstItem="0zp-vc-7GO" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="WUh-Qe-vMe"/>
+                <constraint firstAttribute="bottom" secondItem="iSl-fu-XSH" secondAttribute="bottom" constant="40" id="Wih-Ha-7mU"/>
+                <constraint firstAttribute="trailing" secondItem="iSl-fu-XSH" secondAttribute="trailing" constant="214" id="eRc-m6-rVn"/>
+                <constraint firstItem="0zp-vc-7GO" firstAttribute="leading" secondItem="iSl-fu-XSH" secondAttribute="trailing" constant="98" id="eeS-cA-xEY"/>
+                <constraint firstAttribute="bottom" secondItem="0zp-vc-7GO" secondAttribute="bottom" constant="40" id="kh8-qa-awG"/>
+                <constraint firstItem="JHm-nP-7bE" firstAttribute="top" secondItem="0zp-vc-7GO" secondAttribute="bottom" constant="3" id="qGO-MH-T0k"/>
+                <constraint firstItem="iSl-fu-XSH" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="rWs-kU-MB8"/>
+                <constraint firstAttribute="trailing" secondItem="0zp-vc-7GO" secondAttribute="trailing" constant="20" id="tq6-Dd-KfP"/>
+                <constraint firstItem="iSl-fu-XSH" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="una-LG-WvB"/>
+            </constraints>
+            <point key="canvasLocation" x="303" y="236"/>
+        </customView>
+    </objects>
+</document>

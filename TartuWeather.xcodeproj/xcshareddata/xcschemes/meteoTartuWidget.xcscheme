@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "63E016B91C595AB2002D1C22"
-               BuildableName = "TodayTartuWeather.appex"
-               BlueprintName = "TodayTartuWeather"
+               BlueprintIdentifier = "6346AF711C5E6BC400694EA7"
+               BuildableName = "meteoTartuWidget.appex"
+               BlueprintName = "meteoTartuWidget"
                ReferencedContainer = "container:TartuWeather.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63E016B91C595AB2002D1C22"
-            BuildableName = "TodayTartuWeather.appex"
-            BlueprintName = "TodayTartuWeather"
+            BlueprintIdentifier = "6346AF711C5E6BC400694EA7"
+            BuildableName = "meteoTartuWidget.appex"
+            BlueprintName = "meteoTartuWidget"
             ReferencedContainer = "container:TartuWeather.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,12 +67,8 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2">
-      <RemoteRunnable
-         runnableDebuggingMode = "0"
-         BundleIdentifier = "com.apple.notificationcenter.widgetsimulator"
-         RemotePath = "/System/Library/Frameworks/NotificationCenter.framework/Versions/A/Resources/Widget Simulator.app">
-      </RemoteRunnable>
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63E016A31C595A89002D1C22"
@@ -80,7 +76,7 @@
             BlueprintName = "TartuWeather"
             ReferencedContainer = "container:TartuWeather.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
