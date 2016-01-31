@@ -19,6 +19,12 @@ class ViewController: NSViewController {
     super.viewDidLoad()
 
     updateWeather()
+    
+    NSNotificationCenter.defaultCenter().addObserver(
+    self,
+    selector: "refreshData:",
+    name: "RefreshWeatherData",
+    object: nil)
   }
 
   override var representedObject: AnyObject? {
@@ -43,6 +49,10 @@ class ViewController: NSViewController {
   
   
   @IBAction func refresh(sender: AnyObject) {
+    updateWeather()
+  }
+  
+  func refreshData(notification: NSNotification){     
     updateWeather()
   }
 
