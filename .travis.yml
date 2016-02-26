@@ -1,5 +1,5 @@
 before_install:
-  - brew update
+  - brew update --no-document
   - brew outdated xctool || brew upgrade xctool
 language: objective-c
 osx_image: xcode7.2
