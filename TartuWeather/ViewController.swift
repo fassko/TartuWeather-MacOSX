@@ -8,6 +8,8 @@
 
 import Cocoa
 
+import TartuWeatherProvider
+
 class ViewController: NSViewController {
 
   @IBOutlet weak var temperatureLabel: NSTextField!
@@ -20,42 +22,37 @@ class ViewController: NSViewController {
 
     updateWeather()
     
-    NSNotificationCenter.defaultCenter().addObserver(
-    self,
-    selector: "refreshData:",
-    name: "RefreshWeatherData",
-    object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateWeather), name: NSNotification.Name(rawValue: "RefreshWeatherData"), object: nil)
   }
 
-  override var representedObject: AnyObject? {
+  override var representedObject: Any? {
     didSet {
     // Update the view, if already loaded.
     }
   }
   
   func updateWeather() {
-    WeatherAPI.getData({
-      (temperature, wind, measuredTime) in
-        self.temperatureLabel.stringValue = temperature
-        self.windLabel.stringValue = wind
-        self.measuredTimeLabel.stringValue = measuredTime
+  
+    TartuWeatherProvider.getWeatherData(completion: {data, error in
+
+      guard let temperature = data?["temperature"], let wind = data?["wind"], let measuredTime = data?["measuredTime"] else {
+        return
+      }
+    
+      self.temperatureLabel.stringValue = temperature
+      self.windLabel.stringValue = wind
+      self.measuredTimeLabel.stringValue = measuredTime
+    })
+  
+    TartuWeatherProvider.getCurrentImage(completion: {image in
+      self.currentImage.image = image
     })
     
-    WeatherAPI.getCurrentImage({
-      (image) in
-        self.currentImage.image = image
-    })
   }
   
-  
-  @IBAction func refresh(sender: AnyObject) {
+  @IBAction func refreshData(_ sender: Any) {
     updateWeather()
   }
-  
-  func refreshData(notification: NSNotification){     
-    updateWeather()
-  }
-
 
 }
 

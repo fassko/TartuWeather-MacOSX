@@ -1,0 +1,6 @@
+framework module Pods_meteoTartuWidget {
+  umbrella header "Pods-meteoTartuWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

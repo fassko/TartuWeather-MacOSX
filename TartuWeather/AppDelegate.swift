@@ -14,9 +14,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     // Insert code here to initialize your application
   }
-
-  @IBAction func refresh(sender: AnyObject) {
-    NSNotificationCenter.defaultCenter().postNotificationName("RefreshWeatherData", object: nil)
+  
+  @IBAction func refresh(_ sender: Any) {
+    NotificationCenter.default.post(name: Notification.Name(rawValue: "RefreshWeatherData"), object: self)
   }
+  
 }
 
